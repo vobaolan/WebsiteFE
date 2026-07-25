@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .item{
+            width: 100px;
+            height: 100px;
+        }
+        .red{
+            background: red;
+            flex-grow: 1;
+            height: 200px;
+        }
+        .green{
+            background: green;
+            flex-grow: 2;
+        }
+        .blue{
+            background:blue;
+            flex-grow: 1;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; /*Dồn các phân tử về giữa*/
+            flex-wrap: nowrap;
+            gap: 20px;
+            align-items: center;
+        }   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item red">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+    </div>
+</body>
+</html>
