@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập Tuần 7 - CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>☕Cà Phê Góc Nhỏ☕</h1>
+      <p>Nơi mỗi tách cà phê là một câu chuyện</p>
+      <nav>
+        <ul>
+          <li><a href="#">Trang Chủ</a></li>
+          <li><a href="#content">Thực Đơn</a></li>
+          <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="content">
+      <h2>Sản Phẩm Của Chúng Tôi</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="img-placeholder">Cà Phê Phin Đen Đá</div>
+          <div class="card-body">
+            <h3>Cà Phê Phin Đen Đá</h3>
+            <p>Phin Đen Đá mang vị cà phê đậm đà chất Phin.</p>
+            <span class="price">29,000 VNĐ</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-placeholder">Cà Phê Phin Sữa Đá</div>
+          <div class="card-body">
+            <h3>Cà Phê Phin Sữa Đá</h3>
+            <p>Sự kết hợp hoàn hảo giữa cà phê Phin và sữa đặc.</p>
+            <span class="price">29,000 VNĐ</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-placeholder">Espresso</div>
+          <div class="card-body">
+            <h3>Espresso</h3>
+            <p>Robusta và Arabica chất lượng hảo hạng.</p>
+            <span class="price">45,000 VNĐ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Liên Hệ</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p>
+            📍 <strong>Địa Chỉ:</strong> Quầy NH Phù Đổng 3, KDLVH Suối Tiên,
+            120 Xa Lộ HN, P. Tăng Nhơn Phú, TP.HCM
+          </p>
+          <p>📞 <strong>Điện Thoại:</strong> 0909 090 909</p>
+          <p>🕐 <strong>Giờ Mở Cửa:</strong> 08:00AM - 18:00PM</p>
+          <p>
+            📧 <strong>Email:</strong> customerservice@highlandscoffee.com.vn
+          </p>
+        </div>
+        <div class="contact-form">
+          <input type="text" placeholder="Họ và Tên" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Nội dung" rows="4"></textarea>
+          <button type="button">Gửi</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <strong>Thông tin bổ sung:</strong> Highlands Coffee có xuất xứ từ Việt
+        Nam
+      </p>
+      <p>© 2026 Highlands Coffee. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
