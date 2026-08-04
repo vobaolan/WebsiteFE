@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+  </head>
+  <body>
+    <h2>Rock Paper Scissor</h2>
+    <button onclick="play('Rock')">Rock</button>
+    <button onclick="play('Paper')">Paper</button>
+    <button onclick="play('Scissors')">Scissors</button>
+    <p id="result"></p>
+    <script>
+      function play(user) {
+        let game = ["Rock", "Paper", "Scissors"];
+        let ranInt = Math.floor(Math.random() * 3);
+        let computer = game[ranInt]; //lay index
+        let result = "";
+        if (user == computer) {
+          result = "Draw";
+        } else if (
+          (user == "Rock" && computer == "Scissors") ||
+          (user == "Paper" && computer == "rock") ||
+          (user == "Scissors" && computer == "Paper")
+        ) {
+          result = "You win";
+        } else {
+          result = "You lose";
+        }
+        document.getElementById("result").innerHTML =
+          "You: " + user + ". Computer: " + computer + " = " + result;
+      }
+    </script>
+  </body>
+</html>

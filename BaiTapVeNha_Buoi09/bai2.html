@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập 2 - Đếm Ký Tự</title>
+  </head>
+  <body>
+    <h2>Bài 2: Đếm Ký Tự Và Số Từ</h2>
+    <label for="str">Nhập đoạn văn bản bất kỳ: </label><br /><br />
+    <textarea id="str" rows="5" cols="40"></textarea>
+    <br /><br />
+    <button onclick="demKyTu()">Đếm</button>
+    <p id="resultKyTu"></p>
+    <p id="resultTu"></p>
+
+    <script>
+      function demKyTu() {
+        let str = document.getElementById("str").value;
+
+        let soKyTu = str.length;
+        document.getElementById("resultKyTu").innerHTML = "Số ký tự: " + soKyTu;
+
+        let textTrim = str.trim();
+        let soTu = 0;
+
+        if (textTrim != "") {
+          let mangTu = textTrim.split(" ");
+
+          for (let i = 0; i < mangTu.length; i++) {
+            if (mangTu[i] != "") {
+              soTu++;
+            }
+          }
+        }
+
+        document.getElementById("resultTu").innerHTML = "Số từ: " + soTu;
+      }
+    </script>
+  </body>
+</html>

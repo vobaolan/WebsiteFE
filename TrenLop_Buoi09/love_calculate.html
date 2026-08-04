@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xem bói tình yêu</title>
+  </head>
+  <body>
+    <h2>Love Calculate ❤️</h2>
+    <label for="" class="">Your name</label>
+    <input type="text" id="yourName" />
+    <br />
+    <label for="" class="">Crush name</label>
+    <input type="text" id="crushName" />
+    <br />
+    <button onclick="checkLove()">Check Love</button>
+    <p id="result"></p>
+
+    <script>
+      function checkLove() {
+        let yourName = document.getElementById("yourName").value;
+        let crushName = document.getElementById("crushName").value;
+        let score = Math.floor(Math.random() * 100) + 1;
+        if (score >= 50) {
+          document.getElementById("result").innerHTML =
+            yourName +
+            " ❤️ " +
+            crushName +
+            " Love Score " +
+            score +
+            ". Hai đứa hợp nhau nên kết hôn";
+        } else {
+          document.getElementById("result").innerHTML =
+            yourName +
+            " ❤️ " +
+            crushName +
+            " Love Score " +
+            score +
+            ". Chia tay sớm bớt đau khổ";
+        }
+      }
+    </script>
+  </body>
+</html>

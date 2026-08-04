@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập 13 - Chuyển Đổi Nhiệt Độ</title>
+  </head>
+  <body>
+    <h2>Chuyển Đổi Nhiệt Độ</h2>
+    <label for="">Nhập nhiệt độ theo độ C</label>
+    <input type="number" id="nhietdo" />
+    <br />
+    <button onclick="tinhNhietDo()">Chuyển đổi</button>
+    <p id="result"></p>
+    <script>
+      function tinhNhietDo() {
+        let nhietdo = document.getElementById("nhietdo").value;
+        result = (9 / 5) * nhietdo + 32;
+        document.getElementById("result").innerHTML =
+          +nhietdo + " độ C bằng " + result + " độ F";
+      }
+    </script>
+  </body>
+</html>

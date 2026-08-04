@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập 1 - Kiểm Tra Số Chẵn Lẻ</title>
+  </head>
+  <body>
+    <h2>Kiểm Tra Số Chẵn Lẻ</h2>
+    <label for="">Nhập số nguyên bất kì</label>
+    <input type="number" id="int" />
+    <br />
+    <button onclick="tinhChanLe()">Tính</button>
+    <p id="result"></p>
+    <script>
+      function tinhChanLe() {
+        let int = document.getElementById("int").value;
+        if (int % 2 == 0) {
+          document.getElementById("result").innerHTML = int + " là số chẵn.";
+        } else {
+          document.getElementById("result").innerHTML = int + " là số lẻ.";
+        }
+      }
+    </script>
+  </body>
+</html>

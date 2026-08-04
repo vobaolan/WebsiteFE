@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*code css se viet o day */
+    </style>
+  </head>
+  <body>
+    <h2>Chuong trinh bat / tat bong den</h2>
+    <img src="./bulboff.gif" id="bulb" alt="light" width="120px" />
+    <br />
+    <button onclick="toggleLight()">On / Off</button>
+    <script>
+      //code java se viet o day
+      function toggleLight() {
+        let bulb = document.getElementById("bulb");
+        if (bulb.src.includes("bulboff.gif")) {
+          bulb.src = "bulbon.gif";
+        } else {
+          bulb.src = "bulboff.gif";
+        }
+      }
+    </script>
+  </body>
+</html>
