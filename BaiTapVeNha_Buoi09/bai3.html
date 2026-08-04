@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập 3 - Kiểm Tra Mật Khẩu</title>
+  </head>
+  <body>
+    <h2>Kiểm Tra Mật Khẩu</h2>
+    <label for="password">Nhập mật khẩu: </label>
+    <input type="password" id="password" />
+    <br /><br />
+    <button onclick="kiemTraMatKhau()">Kiểm Tra</button>
+    <p id="result"></p>
+
+    <script>
+      function kiemTraMatKhau() {
+        let password = document.getElementById("password").value;
+
+        if (password == "") {
+          document.getElementById("result").innerHTML =
+            "Vui lòng nhập mật khẩu!";
+        } else if (password.length >= 8) {
+          document.getElementById("result").innerHTML = "Mật khẩu hợp lệ!";
+        } else {
+          document.getElementById("result").innerHTML =
+            "Mật khẩu không hợp lệ (phải từ 8 ký tự trở lên)!";
+        }
+      }
+    </script>
+  </body>
+</html>
