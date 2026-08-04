@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập 1 - Đổi Màu Nền</title>
+  </head>
+  <body>
+    <h2>Bài 1: Đổi Màu Nền Trang Web</h2>
+    <p>Bấm vào nút để đổi màu nền:</p>
+    <button onclick="doiMau('red')">Màu Đỏ</button>
+    <button onclick="doiMau('blue')">Màu Xanh</button>
+    <button onclick="doiMau('green')">Màu Xanh Lá</button>
+    <button onclick="doiMau('yellow')">Màu Vàng</button>
+    <button onclick="doiMau('white')">Màu Trắng</button>
+
+    <script>
+      function doiMau(mau) {
+        document.body.style.backgroundColor = mau;
+      }
+    </script>
+  </body>
+</html>
